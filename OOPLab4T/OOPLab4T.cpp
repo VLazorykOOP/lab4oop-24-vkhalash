@@ -672,13 +672,13 @@ int main()
             cout << "v2" << endl;
             v2.Output();
 
-            v1 += v2;
-            v2 -= v1;
+            VectorShort sum = v1 + v2;
+            VectorShort diff = v1 - v2;
 
             cout << "v1 += v2" << endl;
-            v1.Output();
-            cout << "v2 -= v1" << endl;
-            v2.Output();
+            sum.Output();
+            cout << "v1 -= v2" << endl;
+            diff.Output();
 
             cout << "v1 == v2 = " << (v1 == v2) << endl;
             cout << "v1 != v2 = " << (v1 != v2) << endl;
